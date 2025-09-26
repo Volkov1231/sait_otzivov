@@ -3,15 +3,56 @@
 /* настройки отделяются ; */
 
 body {
-    background-color: rgb(138, 179,255);
-}
+    background-color: rgb(90, 132, 210);
 
+    /* размер шрифта */
+    font-size: 50px;
+
+    /* Название шрифта */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    /* жирность. 100 - самый тонкий, 900 - самый жирный */
+    font-weight: 600;
+
+    /* цвет */
+    color: rgb(193, 156, 138);
+
+    /* курсив */
+    font-style: italic;
+}
 header {
-    background-color: rgb(94,168,94);
+    background-color: rgb(103, 211, 103);
+    font-size: 25px;
 }
 main {
-    background-color: rgb(172, 200, 183);
+    background-color: rgb(23, 115, 60);
+    font-size: 25px;
 }
-footer{
-    background-color: blueviolet;
+footer {
+    background-color: rgb(43, 92, 77);
+}
+
+button {
+    background-color: crimson;
+    font-size: 40px;
+    
+    /* убрать границы  */
+    border: none;
+
+    /* скруглить углы */
+    border-radius: 10px;
+
+    /* накинуть тень */
+    /* 4 настройки: 
+    смещение по оси X
+    смещение по оси Y
+    размытие
+    цвет
+    */
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* чтобы написать особый класс надо написать точку и его название */
+.зелёная_кнопка {
+    background-color: green;
 }

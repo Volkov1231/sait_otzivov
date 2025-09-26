@@ -3,30 +3,39 @@
 
  <!-- язык страницы -->
  <html lang="ru">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- название, которое отображается в названии вкладки -->
-    <title>Document</title>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+      <!-- название, которое отображается в названии вкладки -->
+       <title>Document</title>
 
-    <!-- здесь подключаются файл стилей -->
-     <link rel="stylesheet" href="стили.css"
- </head>
+   <!-- здесь подключаются файл стилей -->
+    <link rel="stylesheet" href="стили.css">
+</head>
  <body>
     <!-- между разными страницами сайтов должна быть одинаковая стартовая линия. Это называется "шапка", содержится внутнри тега head -->
-     <head>
+     <header>
         это - шапка
-     </head>
+        <button class="зелёная_кнопка">
+         КНОПКА
+        </button>
+     </header>
 
      <!-- между шапкой и подвалом есть основной раздел. main -->
       <main>
         основной раздел
+
+        <button>
+         БОЛЬШАЯ КРАСНАЯ КНОПКА
+        </button>
       </main>
 
       <!-- подвал - это то же самое, что шапка, только внизу -->
        <footer>
         Это - подвал
+        <!-- К любому тегу можно добавить класс - он настраивается отдельно -->
+        <button class="зелёная_кнопка">ЗЕЛЁНАЯ КНОПКА</button>
        </footer>
  </body>
  </html>
