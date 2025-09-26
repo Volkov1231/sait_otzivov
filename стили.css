@@ -1,0 +1,17 @@
+/* сначала пишем названия тега или класса  */
+/* потом в фигурных строках пишем настройку стиля */
+/* настройки отделяются ; */
+
+body {
+    background-color: rgb(138, 179,255);
+}
+
+header {
+    background-color: rgb(94,168,94);
+}
+main {
+    background-color: rgb(172, 200, 183);
+}
+footer{
+    background-color: blueviolet;
+}
