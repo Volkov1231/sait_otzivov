@@ -34,5 +34,41 @@ footer p{
 
 .заголовок, .наполнение {
     display: flex;
+    margin-bottom: 15px;
+}
+
+.заголовок {
     align-items: center;
 }
+
+.наполнение p {
+    font-size: 17.5px;
+}
+
+.кнопки {
+    display: flex;
+    justify-content: space-between;
+}
+
+.карточка {
+    margin: 15px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.аватарка {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.картинка {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+;}

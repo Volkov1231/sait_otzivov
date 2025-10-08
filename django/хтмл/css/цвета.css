@@ -22,3 +22,11 @@ footer, header {
     padding: 15px;
     color: white;
 }
+
+.карточка {
+    background-color: white;
+}
+
+.карточка button {
+    background-color: hsl(253, 60%, 81%);
+}
