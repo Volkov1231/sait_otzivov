@@ -1,11 +1,13 @@
+ {% load static %}
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт отзывов</title>
-    <link rel="stylesheet" href="css/основной.css">
-    <link rel="stylesheet" href="css/цвета.css">
+    <link rel="stylesheet" href="{% static "css/основной.css" %}">
+    <link rel="stylesheet" href="{% static "css/цвета.css" %}">
 </head>
 
 <body>
@@ -25,7 +27,7 @@
         <div class="карточка">
             <div class="заголовок">
                 <div>
-                    <img src="картинки/YOZCXZCuuus.jpg" alt="аватар" class="аватарка">
+                    <img src="{% static "картинки/YOZCXZCuuus.jpg" %}" alt="аватар" class="аватарка">
                 </div>
                 <div>
                     <p style="font-size: 20px; font-weight: 900;">имя автора</p>
@@ -34,14 +36,14 @@
             </div>
             <div class="наполнение">
                 <div>
-                    <img src="картинки/плейсхолдер.jpg" alt="картинка поста" class="картинка">
+                    <img src="{% static "картинки/плейсхолдер.jpg" %}" alt="картинка поста" class="картинка">
                 </div>
                 <div>
                     <p>текст отзыва</p>
                     <p>второй абзац</p>
-                </div>
                 <div>
                     <button>Читать полностью...</button>
+                </div>
                 </div>
             </div>
             <div class="кнопки">
@@ -60,7 +62,7 @@
     </main>
     <footer>
         <div>
-            <img src="картинки/logo full.png" alt="Логотип">
+            <img src="{% static "картинки/logo full.png" %}" alt="Логотип">
         </div>
         <div>
             <button>←</button>
