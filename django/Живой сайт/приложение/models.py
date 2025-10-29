@@ -9,6 +9,7 @@ from django.contrib.auth import get_user_model
 
 # Каждая модель (каждый класс) наследуются от стандартного класса джанго (принимает его стандартные свойства).
 class Отзыв(models.Model):
+    автор = models.ForeignKey(Юзер, on_delete=models.CASCADE)
     # Каждая переменная класса - это название поля (колонки таблицы)
     дата_поста = models.DateTimeField(
         # Это полеавтоматически считывает время компьютера и присваивает его в качестве значения в момент создания записи в базе данных (БД)
@@ -21,3 +22,12 @@ class Отзыв(models.Model):
     )
 
     текст = models.TextField()
+
+    class Meta:
+        verbose_name = "Отзыв"
+        verbose_name_plural = "Отзывы"
+
+    def __str__(self):
+        if len(self.текст) > 50:
+            return self.текст[:50] + "..."
+        return self.текст
