@@ -8,3 +8,4 @@ class ОтзывАдмин(admin.ModelAdmin):
 
 admin.site.register(Отзыв, ОтзывАдмин)
 admin.site.register([Аватарка, Тег])
+

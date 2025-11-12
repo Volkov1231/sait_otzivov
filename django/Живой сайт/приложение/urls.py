@@ -4,5 +4,6 @@ from django.urls import path
 from .views import*
 
 urlpatterns = [
-    path('', домашняя),
+    path('', домашняя, name="домашняя"),
+    path('отзыв/<int:айди_отзыва>/', один_отзыв, name="один_отзыв"),
 ]
